@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 1825px;
+
+  justify-content: space-around;
+}
+header {
+  width: 100%;
+  height: 140px;
+  background-color: #ffff;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  position: relative;
+  height: 756px;
+  background-color: #a47e1b;
+}
+main > img {
+  width: 100%;
+  height: 756px;
+  /* filter blue gradient */
+
+  background: linear-gradient(
+    180deg,
+    rgba(3, 68, 162, 0.8) 0%,
+    rgba(30, 7, 235, 0.8) 100%
+  );
+}
+main > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "PT Sans";
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+#mask {
+  height: 756px;
+  /* opacity: calc(1 - 0.5); */
+  position: absolute;
+  /* background: blue; */
+  /* opacity: 0.7; */
+
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* background-color: blue; */
+}
+h1 {
+  font-family: "Playfair Display";
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 50%;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+
+  transform: translate(-50%, -50%);
+}
+span::after {
+  position: absolute;
+  content: "";
+  width: 161px;
+  height: 9px;
+  top: 100px;
+  /* align-self: auto; */
+  left: 46%;
+
+  z-index: 2;
+  background-color: #a47e1b;
+}
+/* div de section */
+
+.m_section {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  height: 100%;
+}
+.ms_divcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 558px;
+  width: 416px;
+  /* sombreado */
+  border-radius: 1em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffff;
+}
+.ms_divcard img {
+  height: 415;
+}
+.ms_divcard h2 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+}
+
+.ms_divcard p {
+  font-family: "PT Sans";
+  font-size: 19px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 15px;
+}
+.sdd_info a {
+  font-family: "PT Sans";
+  font-size: 19px;
+  font-weight: normal;
+  color: #0344a2;
+  text-decoration: none;
+  width: 100%;
+}
+.ms_divcard > img {
+  cursor: pointer;
+}
+.sdd_info {
+  /* height: 100%; */
+  padding: 15px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Aticle */
+
+.m_article {
+  height: 833px;
+  background-color: #faf9f2;
+  display: grid;
+  place-content: center;
+}
+.ad_content {
+  margin-top: 20%;
+}
+.as_div h2 {
+  font-weight: bold;
+  font-family: "Playfair Display";
+  font-size: 35px;
+}
+.as_div > img {
+  width: 108.07px;
+  height: 108.07px;
+}
+.as_div {
+  width: 524px;
+  height: 107px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.ad_academia {
+  width: 524px;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ad_academia p {
+  font-family: "PT Sans";
+  font-size: 19px;
+  font-weight: normal;
+}
+.vector {
+  display: grid;
+  place-content: center;
+  padding: 15px;
+}
+.ads_cards {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.ad_content {
+  display: flex;
+  width: 1469px;
+  height: 382px;
+}
+.ada_information {
+  background-color: #ffff;
+  width: 361px;
+  height: 382px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* sombreado gris */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1em;
+}
+.div_details h2 {
+  color: #0344a2;
+  font-family: "Playfair Display";
+  font-size: 25px;
+}
+.div_details {
+  padding: 20px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sdd_seemore {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sdd_seemore a {
+  font-family: "PT Sans";
+  font-size: 19px;
+  font-weight: normal;
+  color: #0344a2;
+  text-decoration: none;
+  width: 100%;
+}
+.ada_information p {
+  font-family: "PT Sans";
+  font-size: 19px;
+  font-weight: normal;
+  color: #8b8c8c;
+  text-decoration: none;
+  width: 100%;
+}
+footer {
+  background-color: #0344a2;
+  height: 86px;
+  display: grid;
+  place-content: center;
+}
+.footer_p {
+  font-family: "PT Sans";
+  font-size: 16px;
+  color: white;
+  width: 1398px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
